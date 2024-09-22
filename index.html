@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link to the styles.css file -->
+    <title>Electronic Gadgets Store</title>
+</head>
+<body>
+    <header>
+        <h1>Electronic Gadgets Store</h1>
+        <section id="homepage">
+            <h2>Welcome to Electronic Gadgets Store!</h2>
+            <p>Explore our wide range of electronic gadgets, including the latest phones, smartwatches, laptops, and powerful PCs. Whether you're a tech enthusiast or looking for the perfect gadget, we have something for everyone.</p>
+            <p>Simply click on the categories below to discover our curated selection of high-quality products. Add your favorite items to the shopping cart and experience the convenience of online shopping with us.</p>
+            <p>Thank you for choosing Electronic Gadgets Store for your tech needs. Happy shopping!</p>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="categories">
+            <li onclick="showCategory('phones')" class="active">Phones</li>
+            <li onclick="showCategory('smartwatches')">Smartwatches</li>
+            <li onclick="showCategory('laptops')">Laptops</li>
+            <li onclick="showCategory('pcs')">PCs</li>
+        </ul>
+    </nav>
+
+    <section id="products">
+        <!-- Products will be dynamically added here based on the selected category -->
+    </section>
+
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: RM <span id="total-price">0.00</span></p>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
